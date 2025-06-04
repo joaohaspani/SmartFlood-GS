@@ -1,0 +1,20 @@
+# Configuração do analisador de código estático do Dart.
+# https://dart.dev/tools/analysis
+
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    avoid_print: true # Evita o uso de print, prefira logging ou debugPrint.
+    prefer_single_quotes: true # Padroniza o uso de aspas simples.
+    always_use_package_imports: true # Garante consistência nos imports.
+    sort_pub_dependencies: true # Ordena dependências automaticamente.
+    prefer_const_constructors: true # Uso de const sempre que possível.
+    prefer_final_locals: true # Variáveis locais devem ser finais quando possível.
+    unnecessary_this: true # Remove uso desnecessário de 'this'.
+    use_key_in_widget_constructors: true # Garante boas práticas em widgets.
+    avoid_unnecessary_containers: true # Remove containers desnecessários.
+    avoid_empty_else: true # Evita blocos else vazios.
+    prefer_const_literals_to_create_immutables: true # Use const em coleções imutáveis.
+
+# Mais regras em: https://dart.dev/tools/linter-rules
